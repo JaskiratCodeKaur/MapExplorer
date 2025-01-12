@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Author: Jaskirat Kaur,000904397, Date:  13 October, 2024-->
+    <!--StAuth10244: I Jaskirat Kaur, 000904397 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.-->
+
+    <title>Explore Hamilton</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-dark">
+    <!-- Header -->
+    <header class="bg-dark w-100">
+      <div class="container-fluid p-0">
+          <a class="banner text-center w-100" href="#">Explore Hamilton</a>
+      </div>
+    </header> 
+  
+    
+    <!-- Main Container -->
+    <main class="container-fluid mt-3">
+        <div class="row">
+          <div class="card-container">
+              <div class="col-10 mb-3">
+                <div class="card">
+                      <div class="card-body">
+                          <!-- Directions Feature -->
+                          <div class="mb-3 routeFinder">
+                              <h6 class="text-white">Route Finder:</h6>
+                              <div class="d-flex flex-column flex-md-row mb-3">
+                                  <select class="form-select custom-select me-2 mb-2 mb-md-0" id="origin-select">
+                                      <option selected disabled>Select Origin</option>
+                                  </select>
+                                  <select class="form-select custom-select me-2 mb-2 mb-md-0" id="destination-select">
+                                      <option selected disabled>Select Destination</option>
+                                  </select>
+                                  <button class="btn btn-warning direction-btn flex-grow-1 directions" id="btn-get-directions">Get Directions</button>
+                              </div>
+                          </div>
+                  
+                          <!-- Address Input -->
+                          <div class="mb-3 locationAdder">
+                              <h6 class="text-white">Add a Location:</h6>
+                              <div class="d-flex flex-column flex-md-row mb-3">
+                                  <input type="text" class="form-control custom-select me-2 mb-2 mb-md-0" id="address-input" placeholder="Enter Address">
+                                  <button class="btn btn-secondary location-btn flex-grow-1" id="btn-add-address">Add Location</button>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+              
+                  <!-- Filter Buttons -->
+                  <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-3">
+                    <button class="btn btn-info mb-2 mx-2" id="btn-geolocate">My Location</button>
+                    <button class="btn btn-primary mb-2 mx-2" id="filter-parks">Show Parks</button>
+                    <button class="btn btn-secondary mb-2 mx-2" id="filter-museums">Show Museums</button>
+                    <button class="btn mb-2 mx-2" id="filter-hotels" style="background-color: #8567D6; color: white;">Show Hotels</button>
+                    <button class="btn btn-success mb-2 mx-2" id="filter-all">Show All</button>
+                  </div>
+              </div>
+          </div>
+              <!-- Map Display -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="map-container">
+                    <div id="map"></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-3 mt-5">
+      <p class="mb-0">© 2024 Hamilton Explorer. All rights reserved.</p>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Google Maps JavaScript API -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRq8b1FjegwqCyZLEoQYuaOf6cYoXqV0c&callback=initMap&libraries=places"
+        async
+        defer
+    ></script>
+    <script src="page.js"></script>
+</body>
+</html>

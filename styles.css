@@ -1,0 +1,125 @@
+/*
+		CSS Stylesheet
+		Author: Jaskirat Kaur
+		Student ID: 000904397
+		Date: 13 October, 2024
+
+        StAuth10244: I Jaskirat Kaur, 000904397 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.
+		
+		It consist of styling my  webpage and further innovating the structure of web page.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; 
+    background-color: black;
+}
+
+.custom-select {
+    height: 40px; 
+}
+
+.direction-btn{
+    height: 40px; 
+    width: 300px;
+   
+}
+
+.location-btn{
+    height: 40px; 
+    width: 200px;
+
+}
+
+
+.map-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.card-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+#map {
+    height: 60vh; 
+    width: 80%; 
+
+}
+
+.custom-marker {
+    background-color: #ff5722;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: relative;
+    left: -7.5px;
+    top: -7.5px;
+}
+.card{
+    background-color: #606060;
+}
+
+.btn-custom {
+    background-color: #8567D6;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #8567D6; 
+    color: white; 
+}
+
+
+
+footer {
+    background-color: #606060;
+    height: 100px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;   
+}
+
+
+.banner {
+    background-image: url('images/hamilton_banner.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    width: 100%; 
+    font-size: 60px; 
+    font-weight: bold; 
+    text-align: center; 
+    height: 150px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 576px) {
+    #map {
+        height: 50vh;
+    }
+    .direction-btn {
+        height: 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .direction-btn {
+        width: auto;
+        height: 55px; 
+    }
+}
